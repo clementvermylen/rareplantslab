@@ -1,0 +1,25 @@
+$green: #17301C;
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+header {
+    background-color: $green;
+    width: 100vw;
+    display: flex;
+    h1 {
+        color: white;
+        text-align: center;
+    }
+    .header-icon {
+        font-size: 32px;
+        color: white;
+        .burger {
+            align-items: flex-start;
+        }
+    }
+}
