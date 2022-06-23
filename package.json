@@ -1,0 +1,32 @@
+{
+  "name": "rareplantslab",
+  "version": "1.0.0",
+  "description": "rare plants e-shop",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clementvermylen/rareplantslab.git"
+  },
+  "author": "Clément Vermylen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clementvermylen/rareplantslab/issues"
+  },
+  "homepage": "https://github.com/clementvermylen/rareplantslab#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.3.2",
+    "nodemon": "^2.0.16",
+    "passport": "^0.5.2"
+  }
+}
