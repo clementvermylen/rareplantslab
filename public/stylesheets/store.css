@@ -1,0 +1,471 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.button {
+  width: 95px;
+  height: 30px;
+  background-color: #17301C;
+  color: white;
+  border: 1px solid #17301C;
+  border-radius: 20px;
+  margin-top: 2vh;
+  cursor: pointer;
+}
+
+.button .button-text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.main-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header.nav-container {
+  z-index: 2;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #17301C;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+  width: 100vw;
+  padding-right: 2vh;
+  padding-left: 2vh;
+}
+
+header.nav-container .nav-title {
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+header.nav-container .nav-icon {
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+a.button-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+a.button-container:hover {
+  background-color: white;
+  color: #17301C;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.contact-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  gap: 1.5vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.contact-container .socials-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-container h1 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-container h2 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.socials {
+  color: black;
+  font-size: 30px;
+}
+
+.shipping-calculator-container {
+  height: 38vh;
+  width: 100vw;
+  background-color: #17301C;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 3vh;
+}
+
+.shipping-calculator-container .guarantee-container {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 85%;
+  gap: 2.5vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2vh;
+  color: white;
+}
+
+.shipping-calculator-container .guarantee-container p:before {
+  content: "✓ ";
+}
+
+.shipping-calculator-container .calculator-line {
+  height: 1px;
+  width: 80%;
+  background-color: #7D8C85;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.shipping-calculator-container .calculator-container {
+  width: 100vw;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2vh;
+}
+
+.shipping-calculator-container .calculator-container > h1 {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.shipping-calculator-container .calculator-container .input-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.shipping-calculator-container .calculator-container .input-container form {
+  background-color: #17301C;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.shipping-calculator-container .calculator-container .input-container form .input {
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #7D8C85;
+  outline: none;
+  color: #7D8C85;
+  width: 100px;
+  height: 3vh;
+  padding-right: 1vw;
+  padding-left: 1vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.shipping-calculator-container .calculator-container .shipping-cost {
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.shipping-calculator-container .calculator-container .shipping-cost > p {
+  text-align: center;
+}
+
+.shop-container {
+  height: 40vh;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container {
+  width: 100vw;
+  height: 20vh;
+  background-color: #7D8C85;
+}
+
+.rotate {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.drop {
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+}
+
+.nav-burger {
+  position: relative;
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.nav-profile {
+  position: relative;
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.burger-dropdown {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 20px;
+  padding-top: 20px;
+  z-index: 1;
+  position: fixed;
+  width: 35vw;
+  height: 15vh;
+  background-color: rgba(23, 48, 28, 0.8);
+  top: -140px;
+  gap: 10px;
+}
+
+.burger-dropdown a {
+  gap: 5px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.profile-dropdown {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 20px;
+  padding-top: 20px;
+  z-index: 1;
+  position: fixed;
+  width: 35vw;
+  height: 15vh;
+  background-color: rgba(23, 48, 28, 0.8);
+  left: 270px;
+  top: -140px;
+  gap: 10px;
+}
+
+.profile-dropdown a {
+  gap: 5px;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.top-link-container {
+  width: 50vw;
+  height: 3vh;
+  margin-top: 2vh;
+  margin-left: 2vh;
+  font-size: 18px;
+}
+
+.top-link-container .link-home {
+  color: #17301C;
+}
+
+.top-link-container .link-shop {
+  color: #7D8C85;
+  text-indent: 4px;
+}
+
+.popular-container {
+  margin-top: 2vh;
+  width: 100vw;
+  height: 35vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popular-background {
+  position: absolute;
+  z-index: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: 30%;
+  width: 90%;
+}
+
+.bg1 {
+  background-image: url("https://res.cloudinary.com/dt46itgw6/image/upload/v1656085345/Best-Monstera-Plants-to-Grow-at-Home_sis90d.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg2 {
+  background-image: url("https://www.deco.fr/sites/default/files/styles/full_1200x630/public/2019-06/shutterstock_1075161506.jpg?itok=1et2iegi");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 34%;
+}
+
+.bg3 {
+  background-image: url("https://i.etsystatic.com/21880724/r/il/aa4376/2303207811/il_fullxfull.2303207811_6khv.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 34%;
+}
+
+.top-nav-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: absolute;
+  z-index: 0;
+  width: 80%;
+  height: 6%;
+  background-color: #17301C;
+  border-radius: 5px;
+}
+
+.top-nav-container .text-container {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 26px;
+  font-weight: 500;
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.bold:link {
+  text-decoration: underline;
+  color: white;
+}
+
+.bold:visited {
+  text-decoration: underline;
+  color: white;
+}
+
+.bold:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.bold:active {
+  text-decoration: underline;
+  color: white;
+}
+/*# sourceMappingURL=store.css.map */

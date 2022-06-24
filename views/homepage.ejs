@@ -4,18 +4,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/stylesheets/homepage.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Rare plants lab</title>
 </head>
 
-<header>
-    <i class="fa-solid fa-bars header-icon burger"></i>
-    <h1>Rare Plants Lab</h1>
-    <i class="fa-solid fa-cart-shopping header-icon cart"></i>
-    <i class="fa-solid fa-user header-icon user"></i>
-</header>
 <body>
-    <script src="/static/scripts/homepage.js"></script>
+    <div class="burger-dropdown flex">
+        <a href="/">Home</a>
+        <a href="/shop">Shop</a>
+        <a href="/about">About us</a>
+    </div>
+
+    <header class="nav-container flex">
+        <div class="nav-burger"><i class="fa-solid fa-bars nav-icon"></i></div>
+        <a href="/" class="nav-title">Rare Plants Lab</a>
+        <div class="nav-profile"><i class="fa-solid fa-user nav-icon"></i></div>
+    </header>
+
+    <div class="main-container flex">
+        <section class="shop-container flex">
+            <div class="shop-background flex"></div>
+            <div class="shop-text-container flex">
+                <div class="text-container flex">
+                    <div class="line-short top flex"></div>
+                    Similique ducimus dolorem, incidunt commodi harum officiis esse molestiae ratione distinctio quae dolore saepe? Eos expedita illo aliquam alias porro.
+                    <div class="line-short bottom flex"></div>
+                </div>
+                <a class="button-container button flex" href="/shop">
+                    Shop !
+                </a>
+            </div>
+        </section>
+        
+        <section class="shop-container flex">
+            <div class="about-background flex"></div>
+            <div class="about-text-container flex">
+                <div class="text-container flex">
+                    <div class="line-short top flex"></div>
+                    Similique ducimus dolorem, incidunt commodi harum officiis esse molestiae ratione distinctio quae dolore saepe? Eos expedita illo aliquam alias porro.
+                    <div class="line-short bottom flex"></div>
+                </div>
+                <a class="button-container button flex" href="/about">
+                    About us !
+                </a>
+            </div>
+        </section>
+    
+        <section class="contact-container flex">
+            <h1>Contact us !</h1>
+            <div class="socials-container flex">
+                <a href="">
+                    <i class="fa-brands fa-instagram socials"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-tiktok socials"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-youtube socials"></i>
+                </a>
+            </div>
+            <h2>rareplantslab@gmail.com</h2>
+        </section>
+    
+        <section class="shipping-calculator-container flex">
+            <div class="guarantee-container flex">
+                <p class="guarantee"><span class="bold">Homegrown plants</span> with a <a class="bold" href="">health guarantee</a></p>
+                <p class="guarantee"><span class="bold">Free delivery</span> for orders <span class="bold">over 50€</span></p>
+                <p class="guarantee"><span class="bold">Eco friendly</span> and <span class="bold">secure packaging</span></p>
+            </div>
+            <div class="calculator-line"></div>
+            <div class="calculator-container flex">
+                <h1>Shipping cost calculator</h1>
+                <div class="input-container flex">
+                    <form>
+                        <input type="text" class="input" id="country" placeholder="country">
+                        <input type="text" class="input" id="zip" placeholder="zip code">
+                    </form>
+                </div>
+                <div class="shipping-cost flex">
+                    <p class="flex">Estimated shipping cost :<br>14.77€</p>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer-container">
+    
+        </footer>
+    </div>
+
+        <script type="module" src="/static/scripts/homepage.js"></script>
 </body>
 </html>
 
