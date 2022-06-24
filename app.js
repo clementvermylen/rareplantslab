@@ -3,10 +3,6 @@ const router = express.Router();
 const app = express();
 const expressEjsLayout = require('express-ejs-layouts')
 const mongoose = require('mongoose');
-const flash = require('connect-flash');
-const session = require('express-session');
-const passport = require("passport");
-const dotenv = require('dotenv');
 
 //connection to database
 // try {
@@ -22,19 +18,15 @@ app.set('views', './views');
 app.set('view engine', 'ejs');
 app.use("/static", express.static("public"));
 
-app.get('/', (req, res) => {
-    res.render('homepage')
-});
-
 //BodyParser
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json())
 
 
 //Routes
-app.use('/', require('./routes/index'));
-
-
+app.use('/', require('./routes/homepage'));
+app.use('/shop', require('./routes/shop'));
+app.use('/about', require('./routes/about'));
 
 
 app.listen(3000, () => {

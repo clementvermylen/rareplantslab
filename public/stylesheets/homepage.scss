@@ -1,25 +1,318 @@
 $green: #17301C;
+$white: white;
+$black: black;
+$grey: #7D8C85;
+
+$font: 'Lato', sans-serif;
+
 
 * {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    font-family: $font;
 }
 
-header {
-    background-color: $green;
-    width: 100vw;
+.flex {
     display: flex;
-    h1 {
-        color: white;
-        text-align: center;
+}
+
+.button {
+    width: 95px;
+    height: 30px;
+    background-color: $green;
+    color: $white;
+    border: 1px solid $green;
+    border-radius: 20px;
+    margin-top: 2vh;
+    cursor: pointer;
+    .button-text {
+        justify-content: center;
+        align-self: center;
     }
-    .header-icon {
-        font-size: 32px;
-        color: white;
-        .burger {
-            align-items: flex-start;
+}
+
+.line-short {
+    background-color: $green;
+    width: 50px;
+    height: 1px;
+    align-self: center;
+}
+
+.main-container {
+    flex-direction: column;
+}
+
+.rotate{
+    transform: rotateY(180deg);
+}
+
+.drop{
+    transform: translateY(200px);
+}
+
+.nav-burger {
+    position: relative;
+    display: inline-block;
+    transition-duration: 0.3s;
+}
+
+.burger-dropdown {
+    transition-duration: 0.3s;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-top: 20px;
+    z-index: 1;
+    position: fixed;
+    width: 35vw;
+    height: 15vh;
+    background-color: rgba(23, 48, 28, 0.8);
+    top: -140px;
+    gap: 10px;
+    a {
+        gap: 5px;
+        color: $white;
+        font-size: 18px;
+        text-decoration: none;
+    }
+}
+
+header.nav-container {
+    z-index: 2;
+    top: 0;
+    position: sticky;
+    background-color: $green;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    width: 100vw;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    .nav-title {
+        color: $white;
+        font-size:  22px;
+        font-weight: 400;
+    }
+    .nav-icon {
+        color: $white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+}
+
+.shop-container {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: 45vh;
+    width: 100vw;
+    justify-content: flex-end;
+}
+.shop-background {
+    position: absolute;
+    z-index: 0;
+    align-self: center;
+    height: 40%;
+    width: 100%;
+    background-image: url("https://www.jardiner-malin.fr/wp-content/uploads/2020/04/Philodendron.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.shop-text-container {
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 60%;
+    height: 45%;
+    background-color: rgba(69, 156, 66, 0.35);
+}
+.text-container {
+    color: $black;
+    font-size: 15px;
+    flex-direction: column;
+    width: 80%;
+    align-self: center;
+    text-align: center;
+}
+.top {
+    margin-bottom: 1vh;
+}
+.bottom {
+    margin-top: 1vh;
+}
+
+a.button-container {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+    &:hover {
+        background-color: $white;
+        color: $green;
+    }
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover  {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+.about-background {
+    position: absolute;
+    z-index: 0;
+    align-self: center;
+    height: 40%;
+    width: 100%;
+    background-image: url("https://www.plantcelltechnology.com/product_images/uploaded_images/plantjes-big.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about-text-container {
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 60%;
+    height: 45%;
+    background-color: rgba(32, 239, 164, 0.35);
+}
+
+.contact-container {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 1.5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    .socials-container {
+        flex-direction: row;
+        gap: 15px;
+        align-content: center;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    h2 {
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+.socials {
+    color: $black;
+    font-size: 30px;
+}
+
+.shipping-calculator-container {
+    height: 38vh;
+    width: 100vw;
+    background-color: $green;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 3vh;
+    .guarantee-container {
+        align-content: center;
+        width: 85%;
+        gap: 2.5vh;
+        flex-direction: column;
+        padding-left: 2vh;
+        color: $white;
+        p:before {
+            content: "✓ ";
         }
     }
+    .calculator-line {
+        height: 1px;
+        width: 80%;
+        background-color: #7D8C85;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .calculator-container {
+        width: 100vw;
+        color: $white;
+        flex-direction: column;
+        gap: 2vh;
+        &> h1 {
+            text-align: center;
+            align-self: center;
+            font-size: 20px;
+            font-weight: 400;
+        }
+    .input-container {
+        justify-content: center;
+        width: 70%;
+        flex-direction: column;
+        align-self: center;
+        form {
+            background-color: $green;
+            align-self: center;
+            .input {
+                border: none;
+                background: transparent;
+                border-bottom: 1px solid $grey;
+                outline: none;
+                color: $grey;
+                width: 100px;
+                height: 3vh;
+                padding-right: 1vw;
+                padding-left: 1vw;
+                margin-left: 2vw;
+                margin-right: 2vw;
+            }
+        }
+    }
+    .shipping-cost {
+        width: 80%;
+        align-self: center;
+        justify-content: center;
+        & > p {
+            text-align: center;
+        }
+    }
+    }
+}
+
+.footer-container {
+    width: 100vw;
+    height: 20vh;
+    background-color: $grey;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bold:link {
+    text-decoration: underline;
+    color: $white;
+
+}
+.bold:visited {
+    text-decoration: underline;
+    color: $white;
+}
+.bold:hover  {
+    text-decoration: underline;
+    color: $white;
+}
+.bold:active {
+    text-decoration: underline;
+    color: $white;
 }
