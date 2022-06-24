@@ -23,5 +23,5 @@ profile.addEventListener("click", () => {
     else {
         profileMenu.classList.add('drop')
         profile.classList.add('droptag')
-}
+    }
 })

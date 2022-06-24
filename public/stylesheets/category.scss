@@ -117,6 +117,10 @@ $font: 'Lato', sans-serif;
         color: $green;
     }
     .link-shop {
+        color: $green;
+        text-indent: 4px;
+    }
+    .link-category {
         color: $grey;
         text-indent: 4px;
     }
@@ -145,60 +149,6 @@ header.nav-container {
     }
 }
 
-.shop-container {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    height: 45vh;
-    width: 100vw;
-    justify-content: flex-end;
-}
-.shop-background {
-    position: absolute;
-    z-index: 0;
-    align-self: center;
-    height: 40%;
-    width: 100%;
-    background-image: url("https://www.jardiner-malin.fr/wp-content/uploads/2020/04/Philodendron.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.shop-text-container {
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    z-index: 1;
-    width: 60%;
-    height: 45%;
-    background-color: rgba(69, 156, 66, 0.35);
-}
-.text-container {
-    color: $black;
-    font-size: 15px;
-    flex-direction: column;
-    width: 80%;
-    align-self: center;
-    text-align: center;
-}
-.top {
-    margin-bottom: 1vh;
-}
-.bottom {
-    margin-top: 1vh;
-}
-
-a.button-container {
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    transition-property: all;
-    transition-timing-function: linear;
-    transition-duration: 0.3s;
-    &:hover {
-        background-color: $white;
-        color: $green;
-    }
-}
 a:link {
     text-decoration: none;
 }
@@ -358,4 +308,77 @@ a:active {
 .bold:active {
     text-decoration: underline;
     color: $white;
+}
+
+.cards-container {
+    width: 100vw;
+    height: fit-content;
+    padding: 2vh;
+    padding-right: 3vh;
+    padding-left: 3vh;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .card-container {
+        flex-direction: column;
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+        width: 150px;
+        height: 250px;
+        .card-image {
+            height: 80%;
+            width: 100%;
+        }
+        .card-text {
+            margin-top: 1vh;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            color: $black;
+            .name {
+                font-style: italic;
+            }
+            .price {
+                color: $grey;
+            }
+        }
+    }
+}
+
+.card1 {
+    background-image: url("https://www.gardencenterwemmel.be/files/images/webshop/philodendron-mamei-1536x1536-623c9ee132d3c_l.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card2 {
+    background-image: url("https://orchideeen-shop.nl/media/catalog/product/cache/1/image/650x/aa7e4a111a6f16aad7d4ccd9a5e97598/a/n/anc.sanderia.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card3 {
+    background-image: url("https://plnts.com/_next/image?url=https%3A%2F%2Fwebshop.plnts.com%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2Faa5d334f459227518b6c3cf7ea9d29ed%2Fp%2Fl%2Fpl.l.029-thumbnail.jpg&w=786&q=100");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card4 {
+    background-image: url("https://www.ecuagenera.com/WebRoot/Store/Shops/ecuagenera/5EC7/E19D/F62F/121C/F501/C0A8/DA02/1275/Philodendron_mamei_aff.._ml.JPG");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card5 {
+    background-image: url("https://www.eliteorchids.com/wp-content/uploads/2021/08/Anoectochilus-roxburghii-hayata-Pointed-Leaves.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card6 {
+    background-image: url("https://cdn.shopify.com/s/files/1/0396/1592/2342/products/philodendron-melanochrysum-plant-36816851468540_1000x1000.jpg?v=1655218980");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
