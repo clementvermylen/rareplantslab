@@ -27,6 +27,8 @@ app.use(express.json())
 app.use('/', require('./routes/homepage'));
 app.use('/shop', require('./routes/shop'));
 app.use('/about', require('./routes/about'));
+app.use('/category', require('./routes/category'));
+
 
 
 app.listen(3000, () => {

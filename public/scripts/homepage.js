@@ -16,11 +16,14 @@ burger.addEventListener("click", () => {
 })
 
 profile.addEventListener("click", () => {
-    if (profile.classList.contains('rotate')) {
-        profile.classList.remove('rotate')
+    if (profile.classList.contains('droptag')) {
         profileMenu.classList.remove('drop')
+        profile.classList.remove('droptag')
+        console.log("removed")
     }
     else {
         profileMenu.classList.add('drop')
+        profile.classList.add('droptag')
+        console.log("add")
     }
 })
