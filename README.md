@@ -12,4 +12,8 @@ homegrown rare plants e-commerce shop
     
 3. Start a local server by typing
     > npm start
-4. Connect to localhost:3000 on your browser
+    
+4. Start a local database by typing
+    > npx json-server -p 3500 -w database/plant.json
+    
+5. Connect to localhost:3000 on your browser
