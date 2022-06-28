@@ -87,8 +87,8 @@
   padding-top: 20px;
   z-index: 1;
   position: fixed;
-  width: 35vw;
-  height: 15vh;
+  width: 120px;
+  height: 120px;
   background-color: rgba(23, 48, 28, 0.8);
   top: -140px;
   gap: 10px;
@@ -115,11 +115,13 @@
   padding-top: 20px;
   z-index: 1;
   position: fixed;
-  width: 35vw;
-  height: 20vh;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 120px;
+  height: 150px;
   background-color: rgba(23, 48, 28, 0.8);
   left: 270px;
-  top: -140px;
+  top: -160px;
   gap: 10px;
 }
 

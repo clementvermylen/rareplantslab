@@ -1,0 +1,51 @@
+@media screen and (min-width: 500px) {
+  .shop-container {
+    height: 60vh;
+  }
+  .shop-container .shop-background {
+    height: 55%;
+  }
+  .shop-container .shop-text-container {
+    height: 60%;
+  }
+  .shop-container .about-background {
+    height: 55%;
+  }
+  .shop-container .about-text-container {
+    height: 60%;
+  }
+  .shipping-calculator-container {
+    height: 40vh;
+  }
+  .shipping-calculator-container .calculator-line {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .top-link-container {
+    margin-left: 10vh;
+  }
+  .category-container {
+    height: 60vh;
+  }
+  .popular-line {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .top-link-container {
+    margin-left: 10vh;
+  }
+  .main-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.cards-container {
+    width: 90vw;
+  }
+}
+/*# sourceMappingURL=mediaquery.css.map */

@@ -1,0 +1,144 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/stylesheets/store2.css">
+<link rel="stylesheet" href="/static/stylesheets/static.css">
+<link rel="stylesheet" href="/static/stylesheets/mediaquery.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<title>TESTING GROUND</title>
+</head>
+<body>
+    <div class="burger-dropdown flex">
+        <a href="/">Home</a>
+        <a href="/shop">Shop</a>
+        <a href="/about">About us</a>
+    </div>
+    <div class="profile-dropdown flex">
+        <a href="">Profile</a>
+        <a href="">Cart</a>
+        <a href="">Settings</a>
+        <a href="">Log out</a>
+    </div>
+
+    <header class="nav-container flex">
+        <div class="nav-burger hello"><i class="fa-solid fa-bars nav-icon"></i></div>
+        <a href="/" class="nav-title">Rare Plants Lab</a>
+        <div class="nav-profile"><i class="fa-solid fa-user nav-icon"></i></div>
+    </header>
+
+    <div class="top-link-container flex"><a class="link-home" href="/">home ></a><a class="link-shop" href="/shop">shop</a></div>
+
+    <div class="main-container flex">
+
+        <section class="category-nav flex">
+            <div class="cat-title flex">
+                <h1>Popular</h1>
+            </div>
+            <div class="cat-link flex">
+                <a href="/shop/category">see more</a>
+            </div>
+        </section>
+
+        <section class="popular-container category-container flex">
+
+            <section class="splide flex" aria-label="Popular">
+                <div class="splide__track">
+                      <ul id="popular" class="splide__list">
+
+                      </ul>
+                </div>
+            </section>
+        </section>
+
+        <div class="popular-line"></div>
+
+        <section class="category-nav flex">
+            <div class="cat-title flex">
+                <h1>Philodendron</h1>
+            </div>
+            <div class="cat-link flex">
+                <a href="/shop/category">see more</a>
+            </div>
+        </section>
+
+        <section class="philodendron-container category-container flex">
+            <section class="splide flex" aria-label="Philodendron">
+                <div class="splide__track">
+                      <ul id="philodendron" class="splide__list">
+
+                      </ul>
+                </div>
+            </section>
+        </section>
+
+        <section class="category-nav flex">
+            <div class="cat-title flex">
+                <h1>Anoectochilus</h1>
+            </div>
+            <div class="cat-link flex">
+                <a href="/shop/category">see more</a>
+            </div>
+        </section>
+
+        <section class="ano-container category-container flex">
+            <section class="splide flex" aria-label="Anoectochilus">
+                <div class="splide__track">
+                      <ul id="ano" class="splide__list">
+
+                      </ul>
+                </div>
+            </section>
+        </section>
+
+        <section class="contact-container flex">
+            <h1>Contact us !</h1>
+            <div class="socials-container flex">
+                <a href="">
+                    <i class="fa-brands fa-instagram socials"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-tiktok socials"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-youtube socials"></i>
+                </a>
+            </div>
+            <h2>rareplantslab@gmail.com</h2>
+        </section>
+
+        <section class="shipping-calculator-container flex">
+            <div class="guarantee-container flex">
+                <p class="guarantee"><span class="bold">Homegrown plants</span> with a <a class="bold" href="">health guarantee</a></p>
+                <p class="guarantee"><span class="bold">Free delivery</span> for orders <span class="bold">over 50€</span></p>
+                <p class="guarantee"><span class="bold">Eco friendly</span> and <span class="bold">secure packaging</span></p>
+            </div>
+            <div class="calculator-line"></div>
+            <div class="calculator-container flex">
+                <h1>Shipping cost calculator</h1>
+                <div class="input-container flex">
+                    <form>
+                        <input type="text" class="input" id="country" placeholder="country">
+                        <input type="text" class="input" id="zip" placeholder="zip code">
+                    </form>
+                </div>
+                <div class="shipping-cost flex">
+                    <p class="flex">Estimated shipping cost :<br>14.77€</p>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer-container">
+    
+        </footer>
+    </div>
+
+        <script type="module" src="/static/scripts/store.js"></script>
+        <script type="module" src="/static/scripts/static.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+</body>

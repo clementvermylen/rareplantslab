@@ -1,0 +1,40 @@
+{
+    "plants": [
+        { 
+        "genus": "Philodendron",
+        "specie": "Mamei",
+        "price": "29.99€",
+        "picture": "https://res.cloudinary.com/dt46itgw6/image/upload/v1656333003/Philodendron_mamei_aff.._ml_j5lgat.jpg"
+        },
+        { 
+        "genus": "Anoectochilus",
+        "specie": "Fomosanus",
+        "price": "29.99€",
+        "picture": "https://res.cloudinary.com/dt46itgw6/image/upload/v1656333449/0c7445760ee2db52cc6ca9938f14b3b7_gcbivy.jpg"
+        },
+        {
+        "genus": "Anoectochilus",
+        "specie": "Sanderianus",
+        "price": "29.99€",
+        "picture": "https://res.cloudinary.com/dt46itgw6/image/upload/v1656333965/Macodes_sanderiana2__97834.1652383511_mvrn2t.jpg"
+        },
+        { 
+        "genus": "Philodendron",
+        "specie": "McDowell",
+        "price": "29.99€",
+        "picture": "https://res.cloudinary.com/dt46itgw6/image/upload/v1656335815/PHILO-MCDOWELL-BIG_28-10-21_01_600x600_xulroj.jpg"
+        },
+        { 
+        "genus": "Philodendron",
+        "specie": "Melanochrysum",
+        "price": "29.99€",
+        "picture": "https://res.cloudinary.com/dt46itgw6/image/upload/v1656335910/image_5b7257c1-165f-4f6c-bb50-488d4ff01de8_1024x1024_lqmwbt.jpg"
+        },
+        {
+        "genus": "Anoectochilus",
+        "specie": "Roxburghii",
+        "price": "29.99€",
+        "picture": "https://res.cloudinary.com/dt46itgw6/image/upload/v1656333449/0c7445760ee2db52cc6ca9938f14b3b7_gcbivy.jpg"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+$green: #17301C;
+$white: white;
+$black: black;
+$grey: #7D8C85;
+
+$font: 'Lato', sans-serif;
+
+// HOMEPAGE
+
+@media screen and (min-width: 500px) {
+    .shop-container {
+        height: 60vh;
+        .shop-background {
+            height: 55%;
+        }
+        .shop-text-container {
+            height: 60%;
+        }
+        .about-background {
+            height: 55%;
+        }
+        .about-text-container {
+            height: 60%;
+        }
+    }
+    .shipping-calculator-container {
+        height: 40vh;
+        .calculator-line {
+            width: 300px;
+        }
+    }
+}
+
+// STORE
+
+@media screen and (min-width: 500px) {
+    .top-link-container {
+        margin-left: 10vh;
+    }
+    .category-container {
+        height: 60vh;
+    }
+    .popular-line {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+}
+
+// STORE/CATEGORY
+
+@media screen and (min-width: 500px) {
+    .top-link-container {
+        margin-left: 10vh;
+    }
+    .main-container {
+        align-items: center;
+    }
+    section.cards-container {
+        width: 90vw;
+     }
+}
